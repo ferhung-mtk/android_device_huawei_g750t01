@@ -1,6 +1,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Xiaomi HM2014011"
+#define BTM_DEF_LOCAL_NAME   "Huawei G750T01"
 
 #endif 
