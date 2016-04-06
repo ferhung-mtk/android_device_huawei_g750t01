@@ -143,5 +143,8 @@ TARGET_CPU_MEMCPY_OPT_DISABLE := true
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+# Sepolicy hack for old kernel, our mt6582 & mt6592 version is 26.
+POLICYVERS := 26
+
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
