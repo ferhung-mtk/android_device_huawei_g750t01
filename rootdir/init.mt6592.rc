@@ -46,7 +46,10 @@ on post-fs
 
     exec /system/bin/mknod /dev/stpwmt c 190 0
     exec /system/bin/mknod /dev/stpgps c 191 0
+    
     exec /system/bin/mknod /dev/stpbt  c 192 0
+    chmod 0660 /dev/stpbt
+    chown bluetooth radio /dev/stpbt
 
     chmod 0660 /dev/stpwmt
     chown system system /dev/stpwmt
