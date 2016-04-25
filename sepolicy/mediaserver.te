@@ -427,3 +427,8 @@ allow mediaserver vtservice:fd use;
 # Operation : Migration
 # Purpose : allow mediaserver to find pq_service
 allow mediaserver pq_service:service_manager { find };
+
+# added by ferhung
+allow mediaserver device:chr_file { read write ioctl open };
+allow mediaserver self:capability { sys_nice chown fsetid ipc_lock };
+allow mediaserver system_data_file:file { write create open setattr };

@@ -64,3 +64,7 @@ allow untrusted_app pq_service:service_manager { find };
 # Purpose : allow untrusted_app to find mw_blacklist
 # Package: com.mediatek.multiwindow.service
 allow untrusted_app mtk_mwblacklist_service:service_manager find;
+
+# added by ferhung
+allow untrusted_app device:chr_file { read write getattr open ioctl };
+allow untrusted_app kernel:system module_request;

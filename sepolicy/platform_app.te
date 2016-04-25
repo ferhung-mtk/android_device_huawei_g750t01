@@ -264,3 +264,6 @@ allow platform_app fuseblk:file { read open write create getattr unlink};
 # Purpose : allow platform_app to find mw_blacklist
 # Package: com.mediatek.multiwindow.service
 allow platform_app mtk_mwblacklist_service:service_manager find;
+
+# added by ferhung
+allow platform_app device:chr_file { read write ioctl open getattr };

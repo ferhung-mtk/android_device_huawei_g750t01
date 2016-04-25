@@ -81,3 +81,5 @@ allow init socket_device:sock_file { create unlink setattr };
 # Purpose : enable mtd device for ubi ioctl
 allow init mtd_device:chr_file { ioctl getattr };
 
+# added by ferhung
+allow init kernel:system module_request;

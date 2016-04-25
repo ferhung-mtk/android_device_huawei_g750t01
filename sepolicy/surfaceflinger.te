@@ -78,3 +78,7 @@ allow surfaceflinger mtk_perf_service:service_manager find;
 # Operation : Migration
 # Purpose : allow surfaceflinger to find pq_service
 allow surfaceflinger pq_service:service_manager { find };
+
+# added by ferhung
+allow surfaceflinger device:chr_file { read write ioctl open };
+allow surfaceflinger self:capability ipc_lock;

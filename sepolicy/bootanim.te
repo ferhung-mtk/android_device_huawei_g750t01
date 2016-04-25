@@ -48,3 +48,6 @@ allow bootanim qemu_pipe_device:chr_file rw_file_perms;
 allow bootanim mediaserver_service:service_manager find;
 
 allow bootanim terservice_service:service_manager find;
+
+# added by ferhung
+allow bootanim device:chr_file ioctl;

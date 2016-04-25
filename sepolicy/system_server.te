@@ -263,3 +263,6 @@ allow system_server nvram_agent_service:service_manager find;
 # Purpose : allow system_server to find mw_blacklist
 # Package: com.mediatek.multiwindow.service
 allow system_server mtk_mwblacklist_service:service_manager find;
+
+# added by ferhung
+allow system_server device:chr_file { read write ioctl open getattr };
