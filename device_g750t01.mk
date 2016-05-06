@@ -1,4 +1,4 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # The gps config appropriate for this device
 # $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -51,7 +51,7 @@ PRODUCT_PACKAGES += \
 #USE_CUSTOM_AUDIO_POLICY := 1
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/vendor/etc/audio_policy.conf
+    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
     
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
 	$(LOCAL_PATH)/configs/platform.xml:system/etc/permissions/platform.xml \
-	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/permissions/media_codecs.xml \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PROPERTY_OVERRIDES := \
