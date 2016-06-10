@@ -12,5 +12,3 @@ allow init ccci_device:chr_file ioctl;
 allow init gsensor_device:chr_file ioctl;
 allow init kernel:system module_request;
 allow init msensor_device:chr_file ioctl;
-allow init system_file:file execute_no_trans;
-
