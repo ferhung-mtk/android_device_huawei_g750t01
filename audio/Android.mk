@@ -1,3 +1,5 @@
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),mt6592)
+
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -23,3 +25,4 @@ ALL_MODULES.$(LOCAL_MODULE).INSTALLED := \
 LIBORIG :=
 LIBLINK1 :=
 
+endif

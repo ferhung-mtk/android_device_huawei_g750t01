@@ -11,6 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),mt6592)
 
 ifneq ($(BOARD_HAVE_BLUETOOTH_MTK),)
 
@@ -39,5 +40,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 
 include $(BUILD_SHARED_LIBRARY)
+
+endif
 
 endif

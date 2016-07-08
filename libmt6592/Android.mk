@@ -11,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),mt6592)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
@@ -23,3 +24,5 @@ LOCAL_MODULE := libmt6592
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
+
+endif

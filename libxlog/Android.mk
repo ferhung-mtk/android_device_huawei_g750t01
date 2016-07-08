@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),mt6592)
+
 LOCAL_PATH := $(my-dir)
 
 include $(CLEAR_VARS)
@@ -24,3 +26,5 @@ LOCAL_C_INCLUDES += frameworks/av/media/mtp/ system/core/include/ frameworks/rs/
 LOCAL_SHARED_LIBRARIES := libcutils liblog libutils libbinder
 
 include $(BUILD_SHARED_LIBRARY)
+
+endif
