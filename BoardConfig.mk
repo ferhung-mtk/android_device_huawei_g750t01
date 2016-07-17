@@ -110,8 +110,12 @@ HEALTHD_ENABLE_TRICOLOR_LED := true
 RED_LED_PATH := /sys/class/leds/red/brightness
 GREEN_LED_PATH := /sys/class/leds/green/brightness
 BLUE_LED_PATH := /sys/class/leds/blue/brightness
-# Next line, fix charging-mod in power off. It needs to modify the init.cpp.
+# Next lines, fix charging-mod in power off. It needs to modify the init.cpp, too.
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGER_SHOW_PERCENTAGE := true
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.mtk
 
 # EGL settings
 BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
