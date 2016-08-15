@@ -94,6 +94,7 @@ TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
+TW_NO_SCREEN_BLANK := true
 TW_EXTRA_LANGUAGES := true
 TW_BUILD_ZH_CN_SUPPORT := true
 TW_DEFAULT_LANGUAGE := zh_CN
